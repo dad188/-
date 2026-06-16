@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>节日民俗 - 非遗雅集</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 页面专属内部样式 -->
+  <style>
+    .festival-timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .festival-timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #d4c5b2;
+      transform: translateX(-50%);
+    }
+
+    .festival-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .festival-item:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    .festival-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .festival-item .festival-img {
+      flex: 1 1 45%;
+      padding: 10px 30px;
+    }
+
+    .festival-item .festival-img img {
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .festival-item .festival-desc {
+      flex: 1 1 45%;
+      padding: 10px 30px;
+    }
+
+    .festival-item .festival-desc h3 {
+      font-size: 22px;
+      letter-spacing: 3px;
+      color: #c41e3a;
+      margin-bottom: 8px;
+    }
+
+    .festival-item .festival-desc .date-tag {
+      display: inline-block;
+      background: #faf8f4;
+      border: 1px solid #d4c5b2;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      color: #8b7355;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .festival-item .festival-desc p {
+      color: #4a3f30;
+      text-indent: 2em;
+    }
+
+    /* 响应式 */
+    @media (max-width: 768px) {
+      .festival-item,
+      .festival-item:nth-child(even) {
+        flex-direction: column;
+      }
+      .festival-timeline::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <nav id="top-nav">
+    <div id="main-header">
+      <div id="site-logo">非遗雅集<span>· 东方之美</span></div>
+      <ul id="nav-menu">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="paper-cutting.html">剪纸艺术</a></li>
+        <li><a class="nav-link" href="embroidery.html">刺绣工艺</a></li>
+        <li><a class="nav-link" href="tea.html">茶艺文化</a></li>
+        <li><a class="nav-link" href="festival.html">节日民俗</a></li>
+        <li><a class="nav-link" href="reservation.html">参观预约</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 页面标题 -->
+  <div class="page-header">
+    <h1>节日民俗</h1>
+    <p class="breadcrumb"><a href="index.html">首页</a> &gt; 节日民俗</p>
+  </div>
+
+  <div class="container">
+    <!-- 开篇 -->
+    <div class="float-section">
+      <img class="float-left" src="images/节日民俗.webp" alt="节日民俗">
+      <h2>岁时节令，礼乐传家</h2>
+      <p>中国传统节日是中华民族悠久历史文化的重要组成部分，形式多样、内容丰富。从春节的爆竹迎新到中秋的月圆人圆，每一个节日都承载着深厚的文化记忆和民族情感。</p>
+      <p>传统节日民俗涵盖了<span class="highlight">祭祀、祈福、饮食、服饰、游艺</span>等多个方面。这些民俗不仅是生活方式的体现，更是一个民族精神世界的窗口。春节、清明节、端午节、中秋节等传统节日已被列入国家级非物质文化遗产名录。</p>
+    </div>
+
+    <!-- 节日时间线 -->
+    <h2 style="font-size:24px; letter-spacing:4px; margin:40px 0 10px; text-align:center;">四大传统节日</h2>
+    <div class="divider"></div>
+
+    <div class="festival-timeline">
+      <!-- 春节 -->
+      <div class="festival-item">
+        <div class="festival-img">
+          <img src="images/春节.webp" alt="春节">
+        </div>
+        <div class="festival-desc">
+          <h3>春节 · 辞旧迎新</h3>
+          <span class="date-tag">农历正月初一</span>
+          <p>春节是中华民族最隆重的传统节日，由上古时代岁首祈岁祭祀演变而来。贴春联、放鞭炮、吃年夜饭、拜年、给压岁钱等习俗代代相传，寄托着人们对新一年的美好期盼。</p>
+        </div>
+      </div>
+
+      <!-- 清明 -->
+      <div class="festival-item">
+        <div class="festival-img">
+          <img src="images/清明.webp" alt="清明节">
+        </div>
+        <div class="festival-desc">
+          <h3>清明 · 慎终追远</h3>
+          <span class="date-tag">公历四月五日前后</span>
+          <p>清明节兼具自然与人文两大内涵，既是"二十四节气"之一，也是传统祭祖节日。扫墓祭祖与踏青郊游是清明节的两大礼俗主题，体现了中华民族敬祖念恩、亲近自然的精神追求。</p>
+        </div>
+      </div>
+
+      <!-- 端午 -->
+      <div class="festival-item">
+        <div class="festival-img">
+          <img src="images/端午.webp" alt="端午节">
+        </div>
+        <div class="festival-desc">
+          <h3>端午 · 龙舟竞渡</h3>
+          <span class="date-tag">农历五月初五</span>
+          <p>端午节是集拜神祭祖、祈福辟邪、欢庆娱乐和饮食为一体的民俗大节。赛龙舟、吃粽子、挂艾草、佩香囊等习俗流传至今。端午节与春节、清明节、中秋节并称为中国四大传统节日。</p>
+        </div>
+      </div>
+
+      <!-- 中秋 -->
+      <div class="festival-item">
+        <div class="festival-img">
+          <img src="images/中秋.webp" alt="中秋节">
+        </div>
+        <div class="festival-desc">
+          <h3>中秋 · 月圆人圆</h3>
+          <span class="date-tag">农历八月十五</span>
+          <p>中秋节源自天象崇拜，由上古时代秋夕祭月演变而来。赏月、吃月饼、玩花灯、饮桂花酒等民俗流传广泛。中秋节以月之圆兆人之团圆，寄托思念故乡、思念亲人之情。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      「爆竹声中一岁除，春风送暖入屠苏。」—— 王安石《元日》
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <footer id="page-footer">
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="paper-cutting.html">剪纸艺术</a>
+      <a href="embroidery.html">刺绣工艺</a>
+      <a href="tea.html">茶艺文化</a>
+      <a href="festival.html">节日民俗</a>
+      <a href="reservation.html">参观预约</a>
+    </div>
+    <p class="copyright">非遗雅集 &copy; 2026 · 传承千年技艺，品味东方美学</p>
+  </footer>
+
+</body>
+</html>

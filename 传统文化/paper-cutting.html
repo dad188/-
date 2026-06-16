@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>剪纸艺术 - 非遗雅集</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 内部样式表：页面专属样式 -->
+  <style>
+    /* 剪纸页面专属内部样式 */
+    .paper-cut-banner {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .paper-cut-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .paper-cut-banner .banner-text {
+      position: absolute;
+      bottom: 40px;
+      left: 60px;
+      color: #fff;
+      background: rgba(196, 30, 58, 0.85);
+      padding: 16px 32px;
+      letter-spacing: 4px;
+      font-size: 20px;
+      border-radius: 4px;
+    }
+
+    /* 关系选择器：.tool-list 内部的 li */
+    .tool-list > li {
+      display: inline-block;
+      background: #faf8f4;
+      padding: 8px 20px;
+      margin: 4px 6px;
+      border-radius: 20px;
+      letter-spacing: 2px;
+      font-size: 14px;
+      color: #5b8c5a;
+      border: 1px solid #d4c5b2;
+    }
+
+    .tool-list > li:first-child {
+      background: #c41e3a;
+      color: #fff;
+      border-color: #c41e3a;
+    }
+
+    /* 步骤编号 */
+    .step-num {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      background: #c41e3a;
+      color: #fff;
+      border-radius: 50%;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    .craft-step {
+      margin-bottom: 14px;
+      font-size: 15px;
+      color: #4a3f30;
+    }
+
+    .craft-step:hover {
+      color: #c41e3a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <nav id="top-nav">
+    <div id="main-header">
+      <div id="site-logo">非遗雅集<span>· 东方之美</span></div>
+      <ul id="nav-menu">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="paper-cutting.html">剪纸艺术</a></li>
+        <li><a class="nav-link" href="embroidery.html">刺绣工艺</a></li>
+        <li><a class="nav-link" href="tea.html">茶艺文化</a></li>
+        <li><a class="nav-link" href="festival.html">节日民俗</a></li>
+        <li><a class="nav-link" href="reservation.html">参观预约</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 页面头部横幅 -->
+  <div class="paper-cut-banner">
+    <img src="images/剪纸窗花.jpg" alt="剪纸窗花">
+    <div class="banner-text">剪 纸 艺 术 · 镂 空 之 美</div>
+  </div>
+
+  <!-- 页面标题 -->
+  <div class="page-header">
+    <h1>剪纸艺术</h1>
+    <p class="breadcrumb"><a href="index.html">首页</a> &gt; 剪纸艺术</p>
+  </div>
+
+  <div class="container">
+    <!-- 简介区：使用 float 布局 -->
+    <div class="float-section">
+      <img class="float-left" src="images/剪纸.png" alt="剪纸作品">
+      <h2>一纸一世界，一剪一乾坤</h2>
+      <p>剪纸，又称刻纸，是中国最古老的民间艺术之一。以剪刀或刻刀在纸上剪刻花纹，用于装点生活或配合其他民俗活动。剪纸艺术源远流长，最早可追溯至公元六世纪的南北朝时期。</p>
+      <p>剪纸的载体可以是纸张、金银箔、树皮、树叶、布、皮、革等片状材料。剪纸艺术是中华民族的瑰宝，于<span class="highlight">2009年入选联合国教科文组织人类非物质文化遗产代表作名录</span>。</p>
+      <p>中国剪纸分为南派和北派两大体系。北派剪纸以陕西、山西为代表，风格粗犷豪放、造型简练；南派剪纸以江苏、浙江、广东为代表，风格纤细秀丽、精巧明快。蔚县剪纸、佛山剪纸、扬州剪纸等各具独特的地域风貌。</p>
+    </div>
+
+    <!-- 工具与材料 -->
+    <div class="float-section">
+      <img class="float-right" src="images/刻刀.png" alt="剪纸工具">
+      <h2>工具与材料</h2>
+      <p>剪纸的主要工具包括剪刀和刻刀。剪刀用于剪制较为粗放的图案，而刻刀则适合精细复杂的花纹。传统剪纸使用大红宣纸或蜡光纸，纸张薄韧、色泽鲜艳、不易褪色。</p>
+      <p>常用的剪纸工具和材料有：</p>
+      <ul class="tool-list">
+        <li>剪刀</li>
+        <li>刻刀</li>
+        <li>红宣纸</li>
+        <li>蜡光纸</li>
+        <li>垫板</li>
+        <li>订书器</li>
+      </ul>
+    </div>
+
+    <!-- 制作步骤 -->
+    <h2 style="font-size:24px; letter-spacing:4px; margin-bottom:20px;">制作步骤</h2>
+    <p class="craft-step"><span class="step-num">1</span> 起稿：用铅笔在纸上描出图案轮廓，确定构图与细节。</p>
+    <p class="craft-step"><span class="step-num">2</span> 订纸：将画稿与色纸叠在一起，用订书器或纸捻固定四周。</p>
+    <p class="craft-step"><span class="step-num">3</span> 剪刻：按照由内到外、由细到粗的顺序，用剪刀或刻刀镂空图案。</p>
+    <p class="craft-step"><span class="step-num">4</span> 揭离：小心将剪好的作品从纸层中分离出来。</p>
+    <p class="craft-step"><span class="step-num">5</span> 粘贴：将成品平整地粘贴在衬纸上，装裱完成。</p>
+
+    <!-- 名言引用 -->
+    <div class="quote-block">
+      「镂金作胜传荆俗，翦彩为人起晋风。」—— 唐代诗人李商隐笔下的剪纸盛景
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <footer id="page-footer">
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="paper-cutting.html">剪纸艺术</a>
+      <a href="embroidery.html">刺绣工艺</a>
+      <a href="tea.html">茶艺文化</a>
+      <a href="festival.html">节日民俗</a>
+      <a href="reservation.html">参观预约</a>
+    </div>
+    <p class="copyright">非遗雅集 &copy; 2026 · 传承千年技艺，品味东方美学</p>
+  </footer>
+
+</body>
+</html>
